@@ -1,0 +1,2 @@
+﻿When developing forms for websites it is good practice to guard against cross site request forgery attacks. In MVC it is straightforward to do this using the AntiForgeryToken() helper method and the ValidateAntiForgeryToken attribute (as explained by Steve Sanderson). However a side effect of this is that an HttpAntiForgeryException like this will be thrown whenever a forgery attack is prevented:
+	System.Web.Mvc.HttpAntiForgeryException: A required anti-forgery token was not supplied or was invalid.
